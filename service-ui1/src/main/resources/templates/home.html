@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+        <title>Zuul Example</title>
+    </head>
+    <body>
+        <h1>Links!</h1>
+        <p>Click <a th:href="@{/api/a/hi?name=Jason&token=6431f1dd-8b99-11e8-a4e2-000c293a2182}">http://localhost:8787/api/a/hi?name=Jason&token=6431f1dd-8b99-11e8-a4e2-000c293a2182</a> to see a greeting.</p><br>
+      
+        <p>Click <a th:href="@{/api/b/hi?name=Tomson&token=6431f1dd-8b99-11e8-a4e2-000c293a2182}">http://localhost:8787/api/b/hi?name=Tomson&token=6431f1dd-8b99-11e8-a4e2-000c293a2182</a> to see a greeting.</p>
+    </body>
+</html>

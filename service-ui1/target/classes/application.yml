@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: service-ui
+server:
+  port: 8787
+zuul:
+  ignored-services: '*'
+  routes:
+    edge-service:
+      path: /api/**
+      url: http://localhost:8769    
